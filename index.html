@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo List – Pure JS</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS (loaded after parsing thanks to “defer”) -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Todo List</h1>
+
+  <!-- App container -->
+  <div id="app">
+    <!-- Input form -->
+    <form id="todoForm">
+      <input
+        id="todoInput"
+        type="text"
+        placeholder="Add a new task…"
+        autocomplete="off"
+      />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- List -->
+    <ul id="todoList"></ul>
+  </div>
+</body>
+</html>
